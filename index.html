@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-dist\css\bootstrap.css">
+  <script src="bootstrap-5.3.0-dist\js\bootstrap.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header text-center">
+    <img src="https://visme.co/blog/wp-content/uploads/2020/06/animated-interactive-infographics-header-wide.gif" alt="logo" class="logo" />
+    <h1>Personal Finance Tracker</h1>
+    
+    <h2>Track and manage your finances with ease!</h2>
+  </header>
+
+  <div class="container">
+    <h2>Add Transaction</h2>
+    <form id="transaction-form">
+      <div class="mb-3">
+        <label for="type" class="form-label">Type:</label>
+        <select id="type" class="form-select" required>
+          <option value="" disabled selected>Select Type</option>
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label">Category:</label>
+        <select id="category" class="form-select" disabled>
+          <option value="" disabled selected>Select Category</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="amount" class="form-label">Amount:</label>
+        <input type="number" id="amount" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Transaction</button>
+    </form>
+<div class="balance">
+    <h2 class="balance-label">Current Balance:</h2>
+    <p id="balance-amount"></p>
+  </div>
+
+  <div class="container mt-5">
+    <div class="pagination d-flex justify-content-center">
+      <button id="prev-button" class="btn btn-secondary">Previous</button>
+      <span class="mx-3">Page <span id="page-number">1</span></span>
+      <button id="next-button" class="btn btn-secondary">Next</button>
+    </div>
+    <ul id="transaction-list">
+      <li class="transaction">
+        <span class="type"></span>
+        <span class="category"></span>
+        <span class="amount expense"></span>
+        <div class="action-buttons">
+          <button class="edit-button"></button>
+          <button class="delete-button"></button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
