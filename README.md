@@ -23,6 +23,10 @@ Welcome to the Personal Finance Tracker! This web application allows you to mana
 
 ## Getting Started
 
+Click on : https://vishalbansal28.github.io/Personal-Finance-Tracker/
+
+OR
+
 To get started with the Personal Finance Tracker, follow these steps:
 
 1. Clone the repository:
