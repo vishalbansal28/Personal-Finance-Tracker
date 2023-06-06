@@ -9,7 +9,7 @@ body {
   }
   
   .container {
-    max-width: 1600px;
+    max-width: 1000px;
     max-height: 300px;
     margin:none;
     background-color: rgba(151, 231, 233, 0.8);
